@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização Sem Fins Lucrativos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="logo">Nome da Organização</h1>
+            </div>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+                <label for="nav-toggle" class="nav__toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--active">Início</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="projetos.html" class="nav__link">Projetos</a>
+                        <ul class="nav__submenu">
+                            <li><a href="projetos.html#volunteer" class="nav__sublink">Voluntariado</a></li>
+                            <li><a href="projetos.html#donate" class="nav__sublink">Doações</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cadastro.html" class="nav__link">Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Transformando Vidas Através da Solidariedade</h2>
+                    <p class="hero__description">Junte-se a nós nesta missão de fazer a diferença na vida de quem mais precisa.</p>
+                    <div class="hero__actions">
+                        <a href="cadastro.html" class="btn btn--primary btn--large">Seja Voluntário</a>
+                        <a href="#contato" class="btn btn--secondary btn--large">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="missao" class="section">
+            <div class="container">
+                <div class="grid grid--2-cols">
+                    <div class="card">
+                        <div class="card__header">
+                            <h2 class="section__title">Nossa Missão</h2>
+                        </div>
+                        <div class="card__body">
+                            <p>Promover o desenvolvimento social e humano através de ações solidárias que impactem positivamente a vida das pessoas e comunidades mais vulneráveis.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <h2 class="section__title">Nossa Visão</h2>
+                        </div>
+                        <div class="card__body">
+                            <p>Ser referência em transformação social, criando um futuro mais justo e igualitário para todos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visao-valores" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title section__title--center">Nossos Valores</h2>
+                <div class="grid grid--3-cols">
+                    <div class="value-card">
+                        <div class="value-card__icon">💝</div>
+                        <h3 class="value-card__title">Solidariedade</h3>
+                        <p class="value-card__description">Compartilhamos o compromisso de ajudar quem mais precisa.</p>
+                        <span class="badge badge--primary">Essencial</span>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">🤝</div>
+                        <h3 class="value-card__title">Transparência</h3>
+                        <p class="value-card__description">Atuamos com clareza e honestidade em todas as nossas ações.</p>
+                        <span class="badge badge--success">Fundamental</span>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">🌱</div>
+                        <h3 class="value-card__title">Sustentabilidade</h3>
+                        <p class="value-card__description">Buscamos soluções duradouras para problemas sociais.</p>
+                        <span class="badge badge--info">Inovador</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="section">
+            <div class="container">
+                <h2 class="section__title section__title--center">Nossa Equipe</h2>
+                <div class="team-showcase">
+                    <img src="images/grupo.jpg" alt="Imagem da equipe" class="team-showcase__image">
+                    <div class="team-showcase__content">
+                        <p class="text-large">Somos uma equipe dedicada de profissionais e voluntários unidos pelo mesmo propósito: fazer a diferença no mundo.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat__number">50+</span>
+                                <span class="stat__label">Voluntários</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">1000+</span>
+                                <span class="stat__label">Pessoas Ajudadas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">15</span>
+                                <span class="stat__label">Projetos Ativos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title section__title--center">Entre em Contato</h2>
+                <div class="grid grid--2-cols">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3 class="contact-item__title">📧 Email</h3>
+                            <p class="contact-item__text">contato@organizacao.org</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-item__title">📞 Telefone</h3>
+                            <p class="contact-item__text">(00) 0000-0000</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-item__title">🌐 Redes Sociais</h3>
+                            <div class="social-media">
+                                <a href="#" class="social-link social-link--facebook">Facebook</a>
+                                <a href="#" class="social-link social-link--twitter">Twitter</a>
+                                <a href="#" class="social-link social-link--instagram">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                        <h3 class="cta-card__title">Pronto para fazer a diferença?</h3>
+                        <p class="cta-card__text">Junte-se a nossa causa e ajude a transformar vidas!</p>
+                        <a href="cadastro.html" class="btn btn--primary btn--full-width">Cadastre-se Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2025 Nome da Organização. Todos os direitos reservados.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Política de Privacidade</a>
+                    <a href="#" class="footer__link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</script>
+</body>
+</html>

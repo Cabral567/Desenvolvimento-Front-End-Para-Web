@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Organização Sem Fins Lucrativos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="logo">Organização Sem Fins Lucrativos</h1>
+            </div>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+                <label for="nav-toggle" class="nav__toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="projetos.html" class="nav__link">Projetos</a>
+                        <ul class="nav__submenu">
+                            <li><a href="projetos.html#volunteer" class="nav__sublink">Voluntariado</a></li>
+                            <li><a href="projetos.html#donate" class="nav__sublink">Doações</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cadastro.html" class="nav__link nav__link--active">Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Cadastro de Voluntários</h1>
+                <p class="page-header__subtitle">Junte-se a nós e faça a diferença!</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-wrapper">
+                        <form action="#" method="post" class="form" id="volunteer-form">
+                            <div class="form__header">
+                                <h2 class="form__title">Informações Pessoais</h2>
+                                <p class="form__description">Preencha seus dados para se tornar um voluntário</p>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="full-name" class="form__label">Nome Completo *</label>
+                                <input type="text" id="full-name" name="full-name" class="form__input" required>
+                                <span class="form__error" data-field="full-name"></span>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email *</label>
+                                    <input type="email" id="email" name="email" class="form__input" required>
+                                    <span class="form__error" data-field="email"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="phone" class="form__label">Telefone *</label>
+                                    <input type="tel" id="phone" name="phone" class="form__input" required>
+                                    <span class="form__error" data-field="phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="cpf" class="form__label">CPF *</label>
+                                    <input type="text" id="cpf" name="cpf" class="form__input" placeholder="000.000.000-00" required>
+                                    <span class="form__error" data-field="cpf"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="dob" class="form__label">Data de Nascimento *</label>
+                                    <input type="date" id="dob" name="dob" class="form__input" required>
+                                    <span class="form__error" data-field="dob"></span>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="address" class="form__label">Endereço *</label>
+                                <input type="text" id="address" name="address" class="form__input" required>
+                                <span class="form__error" data-field="address"></span>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__group">
+                                <label for="cep" class="form__label">CEP *</label>
+                                <input type="text" id="cep" name="cep" class="form__input" placeholder="00000-000" pattern="\d{5}-\d{3}" required>
+                                    <span class="form__error" data-field="cep"></span>
+                                </div>
+                                <div class="form__group">
+                                    <label for="city" class="form__label">Cidade *</label>
+                                    <input type="text" id="city" name="city" class="form__input" required>
+                                    <span class="form__error" data-field="city"></span>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="state" class="form__label">Estado *</label>
+                                <select id="state" name="state" class="form__select" required>
+                                    <option value="">Selecione um estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <span class="form__error" data-field="state"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="interests" class="form__label">Áreas de Interesse</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="educacao" class="checkbox-item__input">
+                                        <span class="checkbox-item__checkmark"></span>
+                                        <span class="checkbox-item__label">Educação</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="saude" class="checkbox-item__input">
+                                        <span class="checkbox-item__checkmark"></span>
+                                        <span class="checkbox-item__label">Saúde</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="alimentacao" class="checkbox-item__input">
+                                        <span class="checkbox-item__checkmark"></span>
+                                        <span class="checkbox-item__label">Alimentação</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="eventos" class="checkbox-item__input">
+                                        <span class="checkbox-item__checkmark"></span>
+                                        <span class="checkbox-item__label">Organização de Eventos</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="checkbox-item checkbox-item--required">
+                                    <input type="checkbox" name="terms" id="terms" class="checkbox-item__input" required>
+                                    <span class="checkbox-item__checkmark"></span>
+                                    <span class="checkbox-item__label">
+                                        Concordo com os <a href="#" class="form__link">termos de uso</a> e <a href="#" class="form__link">política de privacidade</a> *
+                                    </span>
+                                </label>
+                                <span class="form__error" data-field="terms"></span>
+                            </div>
+
+                            <div class="form__actions">
+                                <button type="reset" class="btn btn--secondary btn--large">Limpar</button>
+                                <button type="submit" class="btn btn--primary btn--large">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-sidebar">
+                        <div class="info-card">
+                            <h3 class="info-card__title">Por que ser voluntário?</h3>
+                            <ul class="info-card__list">
+                                <li class="info-card__item">
+                                    <span class="info-card__icon">❤️</span>
+                                    <span class="info-card__text">Faça a diferença na vida das pessoas</span>
+                                </li>
+                                <li class="info-card__item">
+                                    <span class="info-card__icon">🤝</span>
+                                    <span class="info-card__text">Conheça pessoas incríveis</span>
+                                </li>
+                                <li class="info-card__item">
+                                    <span class="info-card__icon">📈</span>
+                                    <span class="info-card__text">Desenvolva novas habilidades</span>
+                                </li>
+                                <li class="info-card__item">
+                                    <span class="info-card__icon">🌟</span>
+                                    <span class="info-card__text">Contribua para um mundo melhor</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="stats-card">
+                            <h3 class="stats-card__title">Nosso Impacto</h3>
+                            <div class="stats-card__grid">
+                                <div class="stat-item">
+                                    <span class="stat-item__number">500+</span>
+                                    <span class="stat-item__label">Voluntários</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-item__number">2K+</span>
+                                    <span class="stat-item__label">Pessoas Atendidas</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-item__number">25</span>
+                                    <span class="stat-item__label">Projetos Realizados</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-item__number">10</span>
+                                    <span class="stat-item__label">Anos de Atuação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2025 Organização Sem Fins Lucrativos. Todos os direitos reservados.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Política de Privacidade</a>
+                    <a href="#" class="footer__link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</script>
+</body>
+</html>

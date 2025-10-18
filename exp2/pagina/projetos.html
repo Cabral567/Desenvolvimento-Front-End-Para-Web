@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Organização Sem Fins Lucrativos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__brand">
+                <h1 class="logo">Nome da Organização</h1>
+            </div>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav__checkbox">
+                <label for="nav-toggle" class="nav__toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="projetos.html" class="nav__link nav__link--active">Projetos</a>
+                        <ul class="nav__submenu">
+                            <li><a href="#volunteer" class="nav__sublink">Voluntariado</a></li>
+                            <li><a href="#donate" class="nav__sublink">Doações</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cadastro.html" class="nav__link">Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Nossos Projetos</h1>
+                <p class="page-header__subtitle">Conheça como você pode contribuir para nossa causa</p>
+            </div>
+        </section>
+
+        <section id="volunteer" class="section">
+            <div class="container">
+                <div class="project-card project-card--featured">
+                    <div class="project-card__header">
+                        <span class="badge badge--primary">Destaque</span>
+                        <h2 class="project-card__title">Seja um Voluntário</h2>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__description">
+                            O voluntariado é fundamental para o sucesso de nossa organização. Se você deseja fazer parte de nossos projetos e contribuir com seu tempo e habilidades, entre em contato conosco!
+                        </p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-item__icon">🎯</span>
+                                <span class="feature-item__text">Participe de ações sociais e eventos</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-item__icon">📈</span>
+                                <span class="feature-item__text">Ajude na organização de campanhas</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-item__icon">💡</span>
+                                <span class="feature-item__text">Contribua com ideias e projetos</span>
+                            </div>
+                        </div>
+                        <div class="alert alert--info">
+                            <strong>Para se tornar voluntário:</strong> 
+                            <a href="cadastro.html" class="alert__link">cadastre-se aqui</a> ou envie um e-mail para contato@organizacao.org
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="cadastro.html" class="btn btn--primary">Cadastre-se</a>
+                            <a href="mailto:contato@organizacao.org" class="btn btn--secondary">Enviar Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="section section--alt">
+            <div class="container">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="badge badge--success">Ativo</span>
+                        <h2 class="project-card__title">Como Doar</h2>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__description">
+                            Sua doação faz a diferença! Com ela, conseguimos manter e ampliar nossos projetos sociais.
+                        </p>
+                        <div class="donation-types">
+                            <div class="donation-card">
+                                <div class="donation-card__icon">💳</div>
+                                <h3 class="donation-card__title">Transferência Bancária</h3>
+                                <p class="donation-card__description">Doação via PIX ou transferência bancária</p>
+                                <span class="tag tag--primary">Mais usado</span>
+                            </div>
+                            <div class="donation-card">
+                                <div class="donation-card__icon">📦</div>
+                                <h3 class="donation-card__title">Doação de Materiais</h3>
+                                <p class="donation-card__description">Alimentos, roupas ou materiais diversos</p>
+                                <span class="tag tag--secondary">Presencial</span>
+                            </div>
+                            <div class="donation-card">
+                                <div class="donation-card__icon">🔄</div>
+                                <h3 class="donation-card__title">Doação Recorrente</h3>
+                                <p class="donation-card__description">Contribuição mensal automática</p>
+                                <span class="tag tag--warning">Recomendado</span>
+                            </div>
+                        </div>
+                        <div class="alert alert--success">
+                            <strong>Saiba mais sobre como doar:</strong> Entre em contato pelo e-mail doacoes@organizacao.org
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="cadastro.html" class="btn btn--primary">Cadastre-se</a>
+                            <a href="mailto:doacoes@organizacao.org" class="btn btn--success">Quero Doar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title section__title--center">Outros Projetos</h2>
+                <div class="grid grid--3-cols">
+                    <div class="card card--hover">
+                        <div class="card__image">
+                            <div class="placeholder-image">🏫</div>
+                        </div>
+                        <div class="card__content">
+                            <span class="badge badge--info">Em andamento</span>
+                            <h3 class="card__title">Educação para Todos</h3>
+                            <p class="card__description">Projeto focado em alfabetização e educação básica para crianças em situação de vulnerabilidade.</p>
+                        </div>
+                        <div class="card__footer">
+                            <button class="btn btn--small btn--outline">Saiba Mais</button>
+                        </div>
+                    </div>
+                    <div class="card card--hover">
+                        <div class="card__image">
+                            <div class="placeholder-image">🍎</div>
+                        </div>
+                        <div class="card__content">
+                            <span class="badge badge--success">Ativo</span>
+                            <h3 class="card__title">Alimentação Solidária</h3>
+                            <p class="card__description">Distribuição de cestas básicas e refeições para famílias em situação de necessidade.</p>
+                        </div>
+                        <div class="card__footer">
+                            <button class="btn btn--small btn--outline">Saiba Mais</button>
+                        </div>
+                    </div>
+                    <div class="card card--hover">
+                        <div class="card__image">
+                            <div class="placeholder-image">🏥</div>
+                        </div>
+                        <div class="card__content">
+                            <span class="badge badge--warning">Planejamento</span>
+                            <h3 class="card__title">Saúde Comunitária</h3>
+                            <p class="card__description">Campanhas de vacinação e atendimento médico básico em comunidades carentes.</p>
+                        </div>
+                        <div class="card__footer">
+                            <button class="btn btn--small btn--outline">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2025 Organização Sem Fins Lucrativos. Todos os direitos reservados.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Política de Privacidade</a>
+                    <a href="#" class="footer__link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</script>
+</body>
+</html>
